@@ -1,0 +1,17 @@
+[project]
+name = "learn-langgraph"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sanket Vaghela",email = "84759786+sanketvgh@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langgraph (>=0.2.69,<0.3.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
