@@ -5,7 +5,6 @@ from langgraph.graph.message import add_messages
 from typing_extensions import TypedDict, Annotated
 from langchain_core.messages import AnyMessage, HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, START
-from langchain_deepseek import ChatDeepSeek
 from langgraph.prebuilt import ToolNode, tools_condition
 
 
