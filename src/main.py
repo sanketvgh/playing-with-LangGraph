@@ -7,8 +7,11 @@
 import time
 import cProfile
 import pstats
-from module_1.agent_with_memory import run
-
+# from module_1.agent_with_memory import run
+# from module_2.state_schema import run
+# from module_2.state_schema_pydantic import run
+# from module_2.state_reducers import run
+from module_2.state_reducers_custom import run
 import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -20,7 +23,7 @@ def profile_execution(func):
             result = func(*args, **kwargs)
             stats = pstats.Stats(pr)
             stats.sort_stats(pstats.SortKey.TIME)
-            stats.dump_stats(filename=f"{func.__name__}_profile.txt")
+            stats.dump_stats(filename=f"{func.__name__}_profile.prof")
             return result
     return wrapper
 
@@ -36,10 +39,9 @@ def time_execution(func):
 
 
 @time_execution
-# @profile_execution
-def run_with_profile():
+def main():
     run()
 
 
 if __name__ == "__main__":
-    run_with_profile()
+    main()

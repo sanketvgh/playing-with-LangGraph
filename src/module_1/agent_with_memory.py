@@ -46,7 +46,7 @@ def run():
     }}
 
     compiled_state_graph.invoke(
-        HumanMessage(content="What is 2 + 6?"), config=config)
+        HumanMessage(content="What is 32 + 62?"), config=config)
 
     compiled_state_graph.invoke(
-        HumanMessage(content="Multiply that by 3?"), config=config)
+        HumanMessage(content="Multiply that by 33 tell me the result in the k format?"), config=config)
