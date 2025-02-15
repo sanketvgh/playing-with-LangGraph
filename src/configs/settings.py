@@ -8,9 +8,11 @@ class Settings(BaseSettings):
     langsmith_api_key: str = Field(alias="LANGSMITH_API_KEY")
     langsmith_project_name: str = Field(alias="LANGSMITH_PROJECT")
     mistral_api_key: str = Field(alias="MISTRAL_API_KEY")
+    sqlite_connection_string: str = Field(alias="SQLITE_CLOUD_CONNECTION_STRING")
 
     model_config = SettingsConfigDict(
-        extra="ignore", env_file="../.env", env_file_encoding="utf-8")
+        extra="ignore", env_file="../.env", env_file_encoding="utf-8"
+    )
 
 
 settings = Settings()
