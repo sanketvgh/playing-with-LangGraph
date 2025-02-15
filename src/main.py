@@ -11,7 +11,14 @@ import pstats
 # from module_2.state_schema import run
 # from module_2.state_schema_pydantic import run
 # from module_2.state_reducers import run
-from module_2.state_reducers_custom import run
+# from module_2.state_reducers_custom import run
+# from module_2.state_multiple_schema import run
+# from module_2.state_multiple_schema_input_output import run
+# from module_2.filtering_and_trimming import run
+# from module_2.trimming import run
+from module_2.the_5_chatbot_with_summery import run
+
+
 import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
