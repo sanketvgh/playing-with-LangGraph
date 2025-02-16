@@ -1,6 +1,4 @@
-import sqlitecloud
 from configs.settings import settings
-from langgraph.checkpoint.sqlite import SqliteSaver
 from langchain_core.runnables import RunnableConfig
 from langchain_ollama import ChatOllama
 import time
@@ -14,8 +12,9 @@ llm = ChatOllama(model="hermes3:3b", base_url="http://localhost:11434")
 def run():
 
     # Open the connection to SQLite Cloud
+
     conn = sqlite3.connect(":memory:", check_same_thread=False)
-    memory = SqliteSaver(conn)
+    # memory = SqliteSaver(conn)
 
     builder = MessageGraph()
     builder.add_node("chatbot", lambda state: llm.invoke(state))

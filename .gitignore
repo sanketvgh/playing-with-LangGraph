@@ -174,3 +174,7 @@ cython_debug/
 .pypirc
 
 *.prof
+
+# Postgres
+postgres_data/
+pgadmin_data/

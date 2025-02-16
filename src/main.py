@@ -8,6 +8,8 @@ import time
 import cProfile
 import pstats
 
+from module_2.external_memoery import run
+
 # from module_1.agent_with_memory import run
 # from module_2.state_schema import run
 # from module_2.state_schema_pydantic import run
@@ -19,8 +21,9 @@ import pstats
 # from module_2.trimming import run
 # from module_2.the_5_chatbot_with_summery import run
 # from module_2.the_5_chatbot_with_summery import run
-from module_2.external_memoery import run
-
+# from module_2.external_memoery import run
+# from module_3.app import run
+from module_3.stream import run
 
 import logging
 
