@@ -6,8 +6,21 @@ authors = [
     { name = "Sanket Vaghela", email = "84759786+sanketvgh@users.noreply.github.com" },
 ]
 readme = "README.md"
-requires-python = "<4.0,>=3.9.0"
-dependencies = ["langgraph (>=0.2.69,<0.3.0)", "pydantic-settings (>=2.7.1,<3.0.0)", "langchain-core (>=0.3.34,<0.4.0)", "langchain-mistralai (>=0.2.6,<0.3.0)", "langchain-ollama (>=0.2.3,<0.3.0)", "transformers (>=4.48.3,<5.0.0)", "psycopg[binary,pool] (>=3.2.4,<4.0.0)", "psycopg-pool (>=3.2.4,<4.0.0)", "langgraph-checkpoint-postgres (>=2.0.15,<3.0.0)"]
+requires-python = "<4.0,>=3.10"
+dependencies = [
+    "langgraph (>=0.2.69,<0.3.0)",
+    "pydantic-settings (>=2.7.1,<3.0.0)",
+    "langchain-core (>=0.3.34,<0.4.0)",
+    "langchain-mistralai (>=0.2.6,<0.3.0)",
+    "langchain-ollama (>=0.2.3,<0.3.0)",
+    "transformers (>=4.48.3,<5.0.0)",
+    "psycopg[binary,pool] (>=3.2.4,<4.0.0)",
+    "psycopg-pool (>=3.2.4,<4.0.0)",
+    "langgraph-checkpoint-postgres (>=2.0.15,<3.0.0)",
+    "jupyterlab (>=4.3.5,<5.0.0)",
+    "supabase (>=2.13.0,<3.0.0)",
+    "supabase-pydantic (>=0.17.3,<0.18.0)",
+]
 
 [tool.poetry]
 package-mode = false
